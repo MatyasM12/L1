@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.mikha.l1.MainAct"
+    tools:showIn="@layout/activity_main">
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="69dp"
+        android:layout_height="79dp"
+        app:srcCompat="@mipmap/ic_launcher_round"
+        android:layout_marginLeft="158dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="115dp"
+        android:layout_marginStart="158dp" />
+
+    <Button
+        android:id="@+id/audioStartBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Audio!"
+        android:layout_marginLeft="61dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="41dp"
+        android:layout_marginStart="61dp" />
+    <Button
+        android:id="@+id/vidBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Video!"
+        android:layout_marginRight="89dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="41dp"
+        android:layout_marginEnd="89dp" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="275dp"
+        android:layout_height="70dp"
+        android:background="@android:color/holo_red_light"
+        android:layout_marginLeft="70dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="76dp"
+        android:layout_marginStart="70dp" />
+
+    <SearchView
+        android:id="@+id/srcBox"
+        android:layout_width="275dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="6dp"
+        android:background="@android:color/holo_blue_bright"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="70dp" />
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/youtubePlayer"
+        android:layout_width="365dp"
+        android:layout_height="137dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="169dp" />
+
+</android.support.constraint.ConstraintLayout>
