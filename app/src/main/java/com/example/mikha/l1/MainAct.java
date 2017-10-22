@@ -61,6 +61,8 @@ public class MainAct extends YouTubeBaseActivity {
             }
         });
 
+
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -68,8 +70,6 @@ public class MainAct extends YouTubeBaseActivity {
                         .setAction("Action", null).show();
             }
         });
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-
 
 
 
